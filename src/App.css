@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.gov-logo {
+  width: 170px;
+  margin-right: 5px;
+}
+
+.gov-info {
+  text-align: left;
+}
+
+.gov-info h3 {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.header-right {
+  display: flex;
+  gap: 25px;
+}
+
+.g20-logo,
+.swachh-logo {
+  width: 150px;
+  height: 100px;
+}
+
+
+.main-content {
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+ 
+}
+.main{
+  display: flex;
+}
+.main-content h1 {
+  margin-top: 100px;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.explore-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(89, 158, 252, 1) 0%, rgba(189, 247, 255, 1) 100%);
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.explore-btn:hover {
+  background: linear-gradient(90deg, rgba(89, 158, 252, 1) 10%, rgba(189, 247, 255, 1) 90%);
+}
+
+.pm-image {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.pm-img {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+ 
 }
